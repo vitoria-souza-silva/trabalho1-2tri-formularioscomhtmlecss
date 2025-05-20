@@ -1,17 +1,34 @@
+:root{
+    --background-color: #212129b3;
+    --text-color:#ffffff90;
+}
 body{
-    background-color: darkgrey !important;
     width:100%;
-    height: 100vh;
     background-color: var(--background-color) !important;
-    color:var(--text-color) !important;
+    color:var(--text-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+    header {
+    top: 0;
+    height: 80px;
+    border-bottom: 2px solid var(--text-color);
+    position: top;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-*{
-margin: 0;
-padding: 0;
+form input:not(input[type="radio"]){
+    width: 50rem;
 }
 
+form label{
+    margin-top: 1rem;
+}
